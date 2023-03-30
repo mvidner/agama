@@ -1,6 +1,9 @@
 name: CI
 
-on: [push, pull_request]
+on:
+  # Runs on pushes targeting the default branch
+  push:
+    branches: [$default-branch]
 
 jobs:
   frontend_build:
